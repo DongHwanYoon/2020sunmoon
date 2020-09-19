@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h3>과목신청</h3>
+		<form action="/yoon/resServlet" method="POST">
+			과목 <select name="classinfo">
+                    <option value="리눅스">리눅스
+                    <option value="운영체제">운영체제 
+                    <option value="객체지향프로그래밍I">자바 
+                </select><br/>
+			
+            학번 <input type="text" name ="no" />
+            	<input type="radio" name="apply" value="신청" />신청
+                <input type="radio" name="apply" value="미신청" />미신청
+            	<br/>
+            	
+            <input type="submit" value="전송" />
+            <input type="reset" value="지우기" />
+		</form>
+	</body>
+</html>
